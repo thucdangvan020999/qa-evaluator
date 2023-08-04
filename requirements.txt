@@ -1,0 +1,7 @@
+pandas==1.4.3
+langchain==0.0.141
+openai==0.27.0
+streamlit==1.21.0
+black==23.3.0
+isort
+flake8==6.0.0

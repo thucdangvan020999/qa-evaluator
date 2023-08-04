@@ -1,0 +1,16 @@
+version: '3.5'
+
+networks:
+  streamlit-qa-evaluator:
+    driver: bridge
+
+services:
+
+  fastapi:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      - streamlit-qa-evaluator
+    ports:
+      - 8501:8501
